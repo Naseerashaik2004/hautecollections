@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" crossorigin="anonymous">
+
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <style>
+        body {
+            background-color: #ebe9e2;
+            ;
+        }
+
+        .top-box {
+            width: 100%;
+            height: 80px;
+            background-color: lightslategrey;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 10;
+
+        }
+
+        .nav-options {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+        }
+
+        .nav-options i {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .welcome {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .top-menu {
+            height: 40px;
+        }
+
+        .top-menu ul {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+
+        .background-image {
+            height: 80vh;
+            width: 100%;
+        }
+
+        .celebritystyles img {
+            position: relative;
+            width: 300px;
+        }
+
+        .bridal a,
+        .groom a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .womenwear,
+        .menwear {
+            height: 600px;
+            width: 600px;
+        }
+
+        .newarrivals img {
+            position: relative;
+            width: 300px;
+        }
+
+        .video-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .casualwear img {
+            height: 450px;
+            width: 380px;
+            margin-top: 50px;
+        }
+
+        .review {
+            display: flex;
+            margin-top: 30px;
+
+        }
+
+        .review img {
+            height: 400px;
+            width: 600px;
+            margin-top: 30px;
+        }
+
+        .about {
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .about a {
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-box">
+        <div class="welcome">Welcome to Our Mastya Store</div>
+        <div class="nav-options">
+            <i class="fas fa-search"></i> Search
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+        </div>
+    </div>
+    <div class="top-menu">
+        <ul>
+            <li onclick="navigate('home')">Home</li>
+            <li onclick="navigate('celebrityStyles')">Celebrity Styles</li>
+            <li onclick="navigate('weddingCollection')">Wedding Collections</li>
+            <li onclick="navigate('newarrivals')">New Arrivals</li>
+            <li onclick="navigate('casualwear')">Casual Wear</li>
+        </ul>
+    </div>
+    <div id="home">
+        <img class="background-image" src="C:\Users\HP\Desktop\nazeera front end\backgroundimg.webp">
+    </div>
+    <div id="celebrityStyles">
+        <div>
+            <h2 style="text-align: center;">Celebirty Styles</h2>
+        </div>
+        <div class="celebritystyles" style="display: flex; justify-content: center;flex-wrap: nowrap;gap: 20px;">
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\picture.webp">
+                <h4> Silver Tissue Saree<br>From Rs. 55000</h4>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\picture2.webp">
+                <h4>Tara Sutaira in The French Rose<br>From Rs. 58000</h4>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\picture4.webp">
+                <h4>Old Banaras Wrikled Tissue<br>From Rs. 52000</h4>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\picture3.webp">
+                <h4>The Royal Puchwai Lehanga<br>From Rs. 60000</h4>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\cimg.webp">
+                <h4>Old Banaras Wrikled Tissue<br>From Rs. 60000</h4>
+            </div>
+        </div>
+    </div>
+    <div id="weddingCollection">
+        <div>
+            <h2 style="text-align: center;">Wedding Collections</h2>
+        </div>
+        <div class="weddingCollection" style="display: flex; justify-content: center;flex-wrap: nowrap;gap: 20px;">
+            <div class="bridal"
+                style="display: flex;justify-content:center;flex-direction: column;align-items: center  ;">
+                <img class="womenwear" src="C:\Users\HP\Desktop\nazeera front end\picture6.webp">
+                <h2 style="text-align: center;">Bridal Collections<br>Starts From 385000</h2>
+                <h2 style="text-align: center;"><a href="nextpage.html">Explore</a></h2>
+            </div>
+            <div class="groom">
+                <img class="menwear" src="C:\Users\HP\Desktop\nazeera front end\picture7.webp">
+                <h2 style="text-align: center;">Groom Collections<br>Starts From 350000</h2>
+                <h2 style="text-align: center;"><a href="groom.html">Explore</a></h2>
+            </div>
+        </div>
+    </div>
+    <div id="newarrivals">
+        <div>
+            <h2 style="text-align: center;">New Arrivals</h2>
+            <h3 style="text-align: center;">View All</h3>
+        </div>
+        <div class="newarrivals" style="display: flex; justify-content: center;flex-wrap: nowrap;  gap: 20px;">
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\c1img.webp">
+                <h3 style="text-align: center;">French Rose Autumn Lehenga<br>From 256000</h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\bridal.webp">
+                <h3 style="text-align: center;">Satire Japanese Pink Lehenga<br>From 456000</h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\bridalimg.webp">
+                <h3 style="text-align: center;">The Royal Hydari Saree<br>From 296000</h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\bride1.webp">
+                <h3 style="text-align: center;">The Ekru Flamingo Lehenga<br>From 396000</h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\bride2.webp">
+                <h3 style="text-align: center;">French Rose Autumn Lehenga<br>From 256000</h3>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/eNLsKaj3h3E?autoplay=1&showinfo=0&controls=0%22" frameborder="1"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div id="casualwear">
+        <div class="casualwear" style="display: flex; justify-content: center;flex-wrap: nowrap;gap: 50px;">
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\saree.webp">
+                <h3 style="text-align: center;">Sarees Collection<br>From 355000</h3>
+                <h3 style="text-align: center;"><a href="sareepage.html">Explore</a></h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\sharara.webp">
+                <h3 style="text-align: center;">Sharara Collection<br>From 355000</h3>
+                <h3 style="text-align: center;"><a href="shararapage.html">Explore</a></h3>
+            </div>
+            <div>
+                <img src="C:\Users\HP\Desktop\nazeera front end\pert.webp">
+                <h3 style="text-align: center;">Pert Collection<br>From 35000</h3>
+                <h3 style="text-align: center;"><a href="pertpage.html">Explore</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="Customerreview">
+            <h2>Customer Review</h2>
+            <h3>Positive Experiences:</h3>
+            <p>Customers consistently praise Matsya for its overall experience, mentioning it as a "one-stop shop" for
+                trousseau, wedding lehengas, and reception outfits.</p>
+
+            <h3>Exclusivity and Quality:</h3>
+            <p>The brand is known for its exclusive and eye-catching designs, with customers highlighting the uniqueness
+                of each outfit.</p>
+
+            <h3>Bridal Wear Focus:</h3>
+            <p>Matsya is particularly popular for its bridal wear, with customers impressed by the phenomenal collection
+                of bridal lehengas and suits.</p>
+
+            <h3>Customer Service:</h3>
+            <p>The staff and management are often described as super nice, courteous, cooperative, and understanding,
+                ensuring a positive shopping experience.</p>
+        </div>
+        <div class="abt-img">
+            <img src="C:\Users\HP\Desktop\nazeera front end\aboutus.webp" alt="About Us Image">
+        </div>
+    </div>
+    </div>
+    <div class="about" style="background-color:#4d4b43;width:auto;height: 350px">
+        <div>
+            <h2 style="color: aliceblue;">About us</h2>
+            <p style="font-weight: bold; color: aliceblue;">Matsya was born in 2014. The thought of Matsya was not that
+                of a brand, <br>it was story, a journey. I wanted
+                to set on a journey to evolve a new lifestyle,<br> a life that took the old & the new together. Royalty
+                in
+                its most minimalistic<br> form, evolved for the urban life, simplicity beyond imagination. We wanted
+                <br>to
+                create a taste in luxury that was accessible, that didn’t feel untouchable.<br>A sort of grounded
+                exquisite
+                grandeur, a contrast of extremism in a very real <br>form.
+            </p>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div>
+            <h3 style="color:white;">Quick Navigate</h4>
+                <h4 style="color:white;">Home</h4>
+                <h4 style="color:white;">Celebrity Styles</h4>
+                <h4 style="color:white;">Wedding Collection</h4>
+                <h4 style="color:white;">New Arrivals</h4>
+                <h4 style="color:white;">Casual Wear</h4>
+        </div>
+        <div>
+            <h3 style="color:white;">Legal</h3>
+            <h4 style="color:white;">Privacy Policy</h4>
+            <h4 style="color:white;">Terms & Conditions</h4>
+            <h4 style="color:white;">Shipping Policy</h4>
+            <h4 style="color:white;">Terms of Servics</h4>
+            <h4 style="color:white;">Refund Policy</h4>
+        </div>
+        <div>
+            <h3 style="color:white;">Shop by occasions</h3>
+            <h4 style="color:white;">Bridal Collections</h4>
+            <h4 style="color:white;">Groom Collections</h4>
+            <h4 style="color:white;"> Saree Collections</h4>
+            <h4 style="color:white;">Pert Collections </h4>
+            <h4 style="color:white;">Sharara Collections</h4>
+        </div>
+    </div>
+    <div style="position: absolute; border: 3px solid black ;background-color:#4d4b43  ; width:98.3%">
+        <h5 style="color:white;">2025 Matsya World. A Unit of Raro House of Fashion Pvt Ltd. Powered By: Codeaxia
+            Digital Solutions</h5>
+    </div>
+    <script>
+        function navigate(section) {
+            console.log(section);
+            var elem = document
+                .getElementById(section);
+            elem
+                .scrollIntoView({
+                    behavior: 'smooth'
+                })
+        }
+    </script>
+</body>
+</html>
